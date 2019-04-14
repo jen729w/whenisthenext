@@ -30,6 +30,7 @@ class App extends Component {
               .map(record => {
                 console.log(record.fields.UTC.toString());
                 const launchGMT = new Date(record.fields.UTC.toString());
+                // test
                 return (
                   <li style={{ padding: "5px" }}>
                     {record.fields.Name}
